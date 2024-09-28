@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first{
+    color: blue;
+}
+.brown{
+    color: brown;
+}
+
+.bigger{
+    font-size: large;
+}
+
+main .bigger{
+    font-size: larger;
+    
+}
+
+.bolder{
+    font-weight: 600;
+    color: aquamarine;
+}
