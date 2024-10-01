@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: medium;
+    background-color: #804d4d;
+}
+#first{
+    color: blue;
+}
+
+
+.highlight {
+    color: #ff5722; 
+    font-weight: bold;
+}
+
+.deemphasize {
+    color: #ab8787; 
+}
+
+/* Example styling for headers */
+h1 {
+    color: #141111;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #eda634; 
+    text-decoration: none;
+}
+
+
+.bolder{
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(156, 231, 206);
+}
