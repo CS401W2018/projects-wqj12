@@ -1,0 +1,25 @@
+a {
+    color: aquamarine;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(166, 166, 254);
+    background:url('picOfLab.webp') #fff center;
+    background-size: cover;
+}
+
+.current {
+    color: #bbb;
+}
+
+header {
+    /*background-image: url('favicon.ico');
+    background-repeat: no-repeat;
+    background-position: top right;*/
+    background: url('favicon.ico') no-repeat top right;
+}
+
+.list{
+    list-style-type: circle; 
+}
