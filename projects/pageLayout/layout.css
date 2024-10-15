@@ -1,0 +1,85 @@
+header{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-shadow:chocolate ;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(127, 133, 133);
+}
+
+#warpper{
+    background-color: rgb(204, 223, 238);
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#treepic {
+    width: 250px;
+    border: thin solid black;
+    float: left;
+}
+#treepic img{
+    width: 250px;
+    border:outset;
+    border-radius: 10%;
+}
+
+.clear{
+    clear: both;
+}
+
+a {
+    color: rgb(124, 98, 98);
+}
+
+nav{
+    text-transform: capitalize;
+    max-width: 1000px;
+    background-color: rgb(204, 223, 238);
+    height: auto;
+    border:outset;
+    border-radius: 20%;
+    box-shadow:brown;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+nav a{
+    padding: 10px 60px;
+    line-height:10%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+  }
+
+h1,h2{
+    margin: 20px 30px;
+}
+
+footer{
+    max-width: 1000px;
+    margin: auto;
+    background: none;
+}
+
+footer{
+    background: url('b1.jpg') no-repeat top right;
+}
+
+p{
+    text-align: left;
+    
+}
