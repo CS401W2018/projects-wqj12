@@ -4,5 +4,36 @@ body{
 
 header{
     background-color: aquamarine;
-    max-width: 1000px;
+    max-width: 1300px;
+    padding: 1px;
+    margin: auto;
+}
+
+nav{
+    background-color: rgb(124, 141, 141);
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#pic{
+    width: 250px;
+    border: thin solid;
+}
+
+#pic img{
+    width: 250px;
+}
+
+.G1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
