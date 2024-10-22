@@ -4,14 +4,12 @@ body{
 
 header{
     background-color: aquamarine;
-    max-width: 1300px;
     padding: 1px;
     margin: auto;
 }
 
 nav{
     background-color: rgb(124, 141, 141);
-    max-width: 1300px;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -36,4 +34,16 @@ nav a {
 .G1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.small{
+    font-size: small;
+}
+
+aside{
+    margin-left: auto;
+}
+
+main{
+    margin-right: auto;
 }
