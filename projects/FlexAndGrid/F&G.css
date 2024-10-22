@@ -6,6 +6,7 @@ header{
     background-color: aquamarine;
     padding: 1px;
     margin: auto;
+    text-align: center;
 }
 
 nav{
@@ -20,15 +21,23 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: block;
 }
 
-#pic{
+.pic{
     width: 250px;
+    height: 300px;
     border: thin solid;
+    margin: 10px;
+    box-shadow: 10px 10px 10px ;
 }
 
-#pic img{
+.pic img{
     width: 250px;
+}
+
+.pic figcaption{
+    padding: 10px;
 }
 
 .G1{
@@ -42,8 +51,23 @@ nav a {
 
 aside{
     margin-left: auto;
+    /* display: grid;
+    grid-template-columns: 1fr; */
 }
 
 main{
     margin-right: auto;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 5px;
+}
+
+.G2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
 }
