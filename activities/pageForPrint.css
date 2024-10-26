@@ -45,3 +45,22 @@ nav a:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a{
+        border-bottom: thin solid #fff;
+    }
+
+    .labtop{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .main-labtop{
+        order: -1;
+    }
+}
