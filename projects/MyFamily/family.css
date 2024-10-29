@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:blueviolet;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.box{
+    width: 300px;
+    box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.5);
+
+}
+
+.box img{
+    width: 100%;
+}
+
+.box h3,p{
+    padding: 10px;
+}
+
+aside figure{
+    /* max-width: 200px; */
+    width: 100%;
+}
+
+aside figure img{
+    width: 70%;
+}
+
+.center{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+        background-color: rgb(133, 184, 184);
+    }
+
+    nav a{
+        border-bottom: thin solid #fff;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure{
+        /* max-width: 150px; */
+        width: 100%;
+        padding-left: 50px;
+        justify-content:center;
+    }
+
+    aside figure img{
+        width: 50%;
+    }
+
+    main{
+        order: -1;
+    }
+
+    .row{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .box{
+        width: 100%;
+    }
+}
+
+@media print {
+    nav{
+        display: none;
+    }
+
+    nav a{
+        display: none;
+    }
+}
