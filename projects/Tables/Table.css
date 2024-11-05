@@ -22,6 +22,7 @@ caption{
 
 .rank td, .rank th{
     border: thin solid white; 
+    padding: 10px 30px;
 }
 
 .rank thead{
