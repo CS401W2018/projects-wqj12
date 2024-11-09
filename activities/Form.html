@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -11,39 +13,78 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first" value="Wang" required><br>
-            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
-            Password: <input type="password" name="pass"><br>
-            <input type="checkbox" name="remember" checked> Remember Me<br>
-            Grade: <br>
-            <input type="radio" name="grade" value="Freshman"> Freshman<br>
-            <input type="radio" name="grade" value="Sophomore"> Sophomore<br>
-            <input type="radio" name="grade" value="Junior"> Junior<br>
-            <input type="radio" name="grade" value="Senior"> Senior<br>
-            <select name="state" id="state">
-                <option value="blank"></option>
-                <option value="Hawaii">Hawaii</option>
-                <option value="California">California</option>
-                <option value="Utah">Utah</option>
-                <option value="Colorado">Colorado</option>
-            </select><br>
-            <textarea name="comment" id="" placeholder="Enter your comments here..."></textarea><br>
-            <input type="submit">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div for="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first" value="Wang" required><br>
+                </div>
+                
+                <div for="form-row">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="last" placeholder="Last Name">
+                </div>
+                
+                <div for="form-row">
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+
+                <div class="check-row">
+                <label>
+                    <input type="checkbox" name="remember" checked> Remember Me
+                </label>
+                
+                </div>
+                
+                <div>
+                    <label for="check-row">
+                        Grade: 
+                        <input type="radio" name="grade" value="Freshman"> Freshman
+                        <input type="radio" name="grade" value="Sophomore"> Sophomore
+                        <input type="radio" name="grade" value="Junior"> Junior
+                        <input type="radio" name="grade" value="Senior"> Senior
+                    </label>
+                    
+                </div>
+                
+                <div for="form-row">
+                    <label for="state">
+                        <select name="state" id="state">
+                            <option value="blank"></option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="California">California</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Colorado">Colorado</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div for="form-row">
+                    <label for="comment">
+                        <textarea name="comment" id="" placeholder="Enter your comments here..."></textarea>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="form-row">
+                        <input type="submit">
+                    </label>
+                </div>
+
+            </fieldset>
+            
+            
+            
         </form>
 
-        <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p>His function is to send what we input to a place for processing.</p>
+        <h2>What are different ways to style your form?</h2>
+        <p>Using css when we create an classes in the html form</p>
 
-        <h2>The form tag has a "method" attribute. What does it do?</h2>
+        <h2>Why does the professor like to use flex?</h2>
         <p>
-            Its function is that when we transmit data, we can choose the way to submit data through HTTP
+           Becouce it is nicer for the people who using different size of the device.
         </p>
-
-        <h2>What is the difference between a "POST" and a "GET"?</h2>
-        <p>
-            Post is a submission method that protects personal privacy. Get is a method that can be used when we need to find information.
-        </p>
-
     </main>
     <footer>
         <p>&copy; 2024 Wang</p>
