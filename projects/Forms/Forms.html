@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="Forms.css">
+</head>
+<body>
+    <header>
+        <h1>Form of Personal Information</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Log in</legend>
+
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="Cammand">Command:</label>
+                    <textarea id="Cammand" name="Cammand" rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">Remamber Me</label>
+                </div>
+
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="blank"></option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wang</p>
+    </footer>
+</body>
+</html>
