@@ -39,7 +39,13 @@ legend {
 .form-row {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.form-check {
+    text-align: center;
+    margin: 10px;
 }
 
 label {
@@ -55,8 +61,8 @@ textarea,
 select {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: thin solid #ccc;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -75,14 +81,14 @@ button {
     border: none;
     background-color: #333;
     color: #fff;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
 }
 
 button:hover {
     background-color: #555;
 }
+
 
 @media (max-width: 600px) {
     .form-row {
