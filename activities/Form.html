@@ -12,6 +12,7 @@
     </header>
 
     <main>
+        <div id="massage"></div>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
@@ -68,18 +69,13 @@
         </form>
 
         <h2>
-            What is JavaScript? How did it get its name?
+            What is AJAX?
         </h2>
-        <p>JavaScript is a language about computers. Its name was originally Brendan Eich, but was later changed to Javascript for marketing purposes.</p>
+        <p>This will make the entire webpage smoother and there will be no freezing of the page waiting for a response.</p>
 
-        <h2>What are the two ways you can run JavaScript?</h2>
-        <p>Client-side and Server-side</p>
+        <h2>Why do you put your JS Code in a separate file?</h2>
+        <p>There will not be a lot of repeated code when using it, and it is easier to adapt and cache when reading.</p>
 
-        <h2>What was the most popular front-end js library?</h2>
-        <p>It simplified tasks like DOM manipulation, event handling, and AJAX requests, which made it a go-to library for web developers</p>
-
-        <h2>What is the most popular front-end js library today?</h2>
-        <p>I don't know, but It allows developers to build reusable UI components and manage the application state efficiently.</p>
 
     </main>
 
@@ -87,33 +83,6 @@
         <p>&copy; 2024 Wang</p>
     </footer>
 
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const firstName = document.getElementById('fname').value;
-            const lastName = document.getElementById('lname').value;
-            const age = document.getElementById('age')?.value; // Ensure age exists if added later
-
-            const formData = {
-                firstName: firstName,
-                lastName: lastName,
-                age: age
-            };
-
-            if (!firstName || !lastName) {
-                alert("First name and last name are required!");
-                return;
-            }
-
-            if (age && age < 18) {
-                alert("You must be 18 to sign up!");
-                return;
-            }
-
-            console.log(formData);
-            alert("You submitted the form!");
-        });
-    </script>
+    <script src="Form.js"></script>
 </body>
 </html>
