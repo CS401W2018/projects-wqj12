@@ -1,35 +1,167 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: azure;
-    background:url('backgound.png') no-repeat;
+body {
+    font-family:'Times New Roman', Times, serif;
+    background: url('backgound.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: aliceblue;
 }
 
-.logo{
+.logo {
     display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(44, 62, 80, 0.9);
 }
 
-nav{
-    border: thin solid;
-    text-decoration: none;
-}
-
-nav a{
-    color:aquamarine;
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: rgba(52, 73, 94, 0.8);
+    padding: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-nav a :hover{
-    text-decoration: underline
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
-@media only screen and (max-width: 800px) {
-    nav {
-        flex-direction: column;
+nav a:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.rank {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+caption {
+    color: var(--accent-color);
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgba(44, 62, 80, 0.7);
+}
+
+.rank td, .rank th {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.rank thead {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.rank tbody tr:nth-child(odd) {
+    background-color: rgba(213, 88, 88, 0.7);
+}
+
+.rank tbody tr:nth-child(even) {
+    background-color: rgba(106, 88, 88, 0.7);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="date"]:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-check input {
+    margin-right: 10px;
+}
+
+.form-row input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-row button {
+    width: 100%;
+    padding: 12px;
+    color: rgb(81, 81, 81);
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-row button:hover {
+    background-color: #2980b9;
+}
+
+@media only screen and (max-width: 650px) {
+    header h1{
+        font-size: large;
     }
 
-    nav a{
-        border-bottom: thin solid #fff;
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .rank {
+        font-size: 0.9em;
+    }
+
+    .rank td, .rank th {
+        padding: 8px 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: 100%;
+        margin: 5px;
     }
 }
