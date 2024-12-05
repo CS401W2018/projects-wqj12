@@ -6,7 +6,22 @@ body {
     color: aliceblue;
 }
 
-main a{
+h1, h2, p{
+    margin: 10px;
+}
+
+.box{
+    border: thin solid black;
+    background-color: rgba(48, 109, 199, 0.8);
+    margin: 0;
+}
+
+.mar{
+    margin: 10px;
+}
+
+
+.box a, .mar a{
     color: white;
 }
 
@@ -234,6 +249,15 @@ main div div img {
 
 .help-link:hover {
     text-decoration: underline;
+}
+
+.car{
+    box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.5);
+
+}
+
+.car img{
+    width: 100%;
 }
 
 @media only screen and (max-width: 650px) {
