@@ -14,6 +14,7 @@ h1, h2, p{
     border: thin solid black;
     background-color: rgba(48, 109, 199, 0.8);
     margin: 0;
+    border-radius: 10px;
 }
 
 .mar{
