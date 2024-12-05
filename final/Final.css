@@ -260,6 +260,14 @@ main div div img {
     width: 100%;
 }
 
+.video{
+    text-align: center;
+}
+
+.video video{
+    width: 100%;
+}
+
 @media only screen and (max-width: 650px) {
     header h1{
         font-size: large;
@@ -299,5 +307,10 @@ main div div img {
 
     .tracking-input {
         width: 95%;
+    }
+
+    .video .video{
+        text-align: center;
+        max-width: 200px;
     }
 }
