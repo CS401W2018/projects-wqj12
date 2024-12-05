@@ -6,6 +6,10 @@ body {
     color: aliceblue;
 }
 
+main a{
+    color: white;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -23,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     padding: 8px 15px;
     transition: all 0.3s ease;
@@ -31,13 +35,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--hover-color);
+    background-color: rgb(163, 156, 142);
     color: white;
 }
 
 .rank {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     border-radius: 8px;
     overflow: hidden;
@@ -45,8 +49,7 @@ nav a:hover {
 }
 
 caption {
-    color: var(--accent-color);
-    font-size: 1.5em;
+    font-size: 20px;
     padding: 10px;
     background-color: rgba(44, 62, 80, 0.7);
 }
@@ -71,39 +74,38 @@ caption {
     background-color: rgba(106, 88, 88, 0.7);
 }
 
+.services-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .form-row {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-row label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.form-row input[type="text"],
-.form-row input[type="date"],
+.form-row input,
 .form-row select,
 .form-row textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-.form-row input[type="text"]:focus,
-.form-row input[type="date"]:focus,
-.form-row select:focus,
-.form-row textarea:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 .form-check {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
 }
 
@@ -128,6 +130,110 @@ caption {
 
 .form-row button:hover {
     background-color: #2980b9;
+}
+
+.pic {
+    display: flex;
+    overflow: hidden;
+    gap: 10px; 
+    position: relative; 
+}
+
+main div div img {
+    flex: 0 0 auto;
+    width: 150px;
+    height: auto;
+    animation: circular-motion 10s linear infinite;
+}
+
+@keyframes circular-motion {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-533%);
+    }
+}
+
+.tracking-box {
+    background-color: rgba(76, 109, 177, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tracking-header {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tracking-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.des {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tracking-input {
+    width: 97%;
+    border: thin solid ;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.help-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.instruction {
+    font-size: 13px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-button {
+    background-color: rgb(74, 74, 43);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.track-button:hover {
+    background-color: #b19540;
+}
+
+.help-link {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.help-link:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 650px) {
@@ -155,13 +261,19 @@ caption {
         padding: 8px 10px;
     }
 
-    .form-row {
-        flex-direction: column;
-        align-items: flex-start;
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .full-width {
+        grid-column: 1 / -1;
     }
 
-    label {
+    .tracking-box {
+        max-width: 400px;
         width: 100%;
-        margin: 5px;
+    }
+
+    .tracking-input {
+        width: 95%;
     }
 }
