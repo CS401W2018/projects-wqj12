@@ -89,6 +89,12 @@ button:hover {
     background-color: #555;
 }
 
+footer{
+    background-color: antiquewhite;
+    color: #333;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 @media (max-width: 600px) {
     .form-row {
